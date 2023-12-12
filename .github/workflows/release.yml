@@ -28,6 +28,6 @@ jobs:
           cache: "pnpm"
       - run: pnpm run ci
       - name: release version
-        run: npx semantic-release
+        run: pnpm dlx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
