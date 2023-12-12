@@ -17,10 +17,11 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.55.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "nuxt": "^3.8.2",
     "vue": "^3.3.10",
-    "vue-router": "^4.2.5",
-    "husky": "^8.0.0"
+    "vue-router": "^4.2.5"
   },
   "config": {
     "commitizen": {
