@@ -10,8 +10,8 @@
     "postinstall": "nuxt prepare",
     "commit": "cz",
     "prepare": "husky install",
-    "lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
-    "format": "prettier --write ."
+    "lint:ts": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
+    "lint:format": "prettier --write ."
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -37,6 +37,6 @@
     }
   },
   "lint-staged": {
-    "*.{ts,vue}": "pnpm run lint && pnpm run format"
+    "*.{ts,vue}": "pnpm run \"/^lint:.*/\""
   }
 }
