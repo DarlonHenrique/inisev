@@ -11,7 +11,8 @@
     "commit": "cz",
     "prepare": "husky install",
     "lint:ts": "eslint --ext \".ts,.vue\" --ignore-path .gitignore .",
-    "lint:format": "prettier --write ."
+    "lint:format": "prettier --write .",
+    "ci": "CI=true pnpm install"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
@@ -27,6 +28,7 @@
     "lint-staged": "^15.2.0",
     "nuxt": "^3.8.2",
     "prettier": "^3.1.1",
+    "semantic-release": "^22.0.11",
     "typescript": "^5.3.3",
     "vue": "^3.3.10",
     "vue-router": "^4.2.5"
